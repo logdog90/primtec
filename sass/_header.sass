@@ -1,0 +1,26 @@
+.container
+    max-width: 1240px
+    margin: 0 auto
+
+.header
+    .header-top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 75px
+        &-item
+            display: flex
+            align-items: center
+            justify-content: space-between
+            &__link
+                display: flex
+                align-items: center
+                color: $text
+                +regular
+            &__link::before
+                content: "\e93a"
+                font-family: 'icomoon' !important
+                font-size: 20px
+                color: $bg
+                padding-left: 15px
+                padding-right: 15px
