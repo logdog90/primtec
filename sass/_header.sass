@@ -12,6 +12,53 @@
             display: flex
             align-items: center
             justify-content: space-between
+            &__logo
+                display: flex
+                align-items: center
+                text-transform: uppercase
+                font-size: 30px
+                +bold
+            &__black
+                color: #000000
+            &__red
+                color: #ff0000
+            &__phone
+                display: flex
+                align-items: center
+                padding-left: 40px
+                color: #000000
+            &__phone::before
+                content: '\e942'
+                font-family: 'icomoon' !important
+                font-size: 20px
+                color: $bg
+                padding-right: 10px
+            &__search
+                display: flex
+                align-items: center
+            &__search-text
+                display: none
+                width: 320px
+                height: 20px
+                border-radius: 10px
+                border: 1px solid #d4d4d4
+                outline: none
+                padding: 5px 10px
+            &__search-text-active
+                display: block
+                width: 320px
+                height: 20px
+                border-radius: 10px
+                border: 1px solid #d4d4d4
+                outline: none
+                padding: 5px 10px
+            &__search-button::after
+                content: '\e986'
+                font-family: 'icomoon' !important
+                font-size: 20px
+                color: $bg
+                padding-left: 15px
+                padding-right: 15px
             &__link
                 display: flex
                 align-items: center
