@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Montserrat Regular';
   src: url("../fonts/montserrat/Montserrat-Regular.eot");
@@ -23,8 +24,13 @@
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.header__header {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header .header-top {
@@ -37,7 +43,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 75px;
 }
 
 .header .header-top-item {
@@ -69,7 +74,7 @@
 }
 
 .header .header-top-item__red {
-  color: #ff0000;
+  color: #EB3437;
 }
 
 .header .header-top-item__phone {
@@ -81,10 +86,11 @@
           align-items: center;
   padding-left: 40px;
   color: #000000;
+  font-family: 'Montserrat Semibold', sans-serif;
 }
 
 .header .header-top-item__phone::before {
-  content: '\e942';
+  content: "";
   font-family: 'icomoon' !important;
   font-size: 20px;
   color: #EB3437;
@@ -110,7 +116,7 @@
   padding: 5px 10px;
 }
 
-.header .header-top-item__search-text-active {
+.header .header-top-item__search-text--active {
   display: block;
   width: 320px;
   height: 20px;
@@ -121,7 +127,7 @@
 }
 
 .header .header-top-item__search-button::after {
-  content: '\e986';
+  content: "";
   font-family: 'icomoon' !important;
   font-size: 20px;
   color: #EB3437;
@@ -137,11 +143,11 @@
       -ms-flex-align: center;
           align-items: center;
   color: #000000;
-  font-family: 'Montserrat Regular', sans-serif;
+  font-family: 'Montserrat Semibold', sans-serif;
 }
 
 .header .header-top-item__link::before {
-  content: "\e93a";
+  content: "";
   font-family: 'icomoon' !important;
   font-size: 20px;
   color: #EB3437;
@@ -149,12 +155,48 @@
   padding-right: 15px;
 }
 
+.header .header-main {
+  background-color: #EB3437;
+}
+
+.header .header-main .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header-main .nav__item {
+  padding: 15px 40px 15px 0;
+}
+
+.header .header-main .nav__item:last-child {
+  padding-right: 0;
+}
+
+.header .header-main .nav__link {
+  color: #ffffff;
+}
+
+.header .header-main .nav__link:hover {
+  color: #F7FF00;
+}
+
 body {
-  font-size: 13px;
+  font-size: 15px;
   font-family: 'Montserrat Regular', sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,15 @@
 .container
-    max-width: 1240px
+    max-width: 1200px
     margin: 0 auto
 
 .header
+    &__header
+        padding-top: 10px
+        padding-bottom: 10px
     .header-top
         display: flex
         align-items: center
         justify-content: space-between
-        height: 75px
         &-item
             display: flex
             align-items: center
@@ -19,16 +21,17 @@
                 font-size: 30px
                 +bold
             &__black
-                color: #000000
+                color: $text
             &__red
-                color: #ff0000
+                color: $bg
             &__phone
                 display: flex
                 align-items: center
                 padding-left: 40px
-                color: #000000
+                color: $text
+                +semibold
             &__phone::before
-                content: '\e942'
+                content: $icon-phone
                 font-family: 'icomoon' !important
                 font-size: 20px
                 color: $bg
@@ -41,19 +44,19 @@
                 width: 320px
                 height: 20px
                 border-radius: 10px
-                border: 1px solid #d4d4d4
+                border: 1px solid $border-search
                 outline: none
                 padding: 5px 10px
-            &__search-text-active
+            &__search-text--active
                 display: block
                 width: 320px
                 height: 20px
                 border-radius: 10px
-                border: 1px solid #d4d4d4
+                border: 1px solid $border-search
                 outline: none
                 padding: 5px 10px
             &__search-button::after
-                content: '\e986'
+                content: $icon-search
                 font-family: 'icomoon' !important
                 font-size: 20px
                 color: $bg
@@ -63,11 +66,28 @@
                 display: flex
                 align-items: center
                 color: $text
-                +regular
+                +semibold
             &__link::before
-                content: "\e93a"
+                content: $icon-shopping-cart
                 font-family: 'icomoon' !important
                 font-size: 20px
                 color: $bg
                 padding-left: 15px
                 padding-right: 15px
+    .header-main
+        background-color: $bg
+        .nav
+            &__list
+                display: flex
+                align-items: center
+                justify-content: center
+            &__item
+                padding: 15px 40px 15px 0
+            &__item:last-child
+                padding-right: 0
+            &__link
+                color: $color-nav-white
+            &__link:hover
+                color: #F7FF00
+
+            
