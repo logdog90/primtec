@@ -30,7 +30,6 @@
 
 .header__header {
   padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .header .header-top {
@@ -169,6 +168,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 0;
 }
 
 .header .header-main .nav__item {
@@ -185,6 +185,52 @@
 
 .header .header-main .nav__link:hover {
   color: #F7FF00;
+}
+
+.slick {
+  position: relative;
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 35%;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: #EB3437;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slick-disabled {
+  cursor: default;
+  background-color: transparent;
+  color: transparent;
+}
+
+.slick-prev {
+  left: 0;
+  margin-left: 20px;
+}
+
+.slick-prev::before {
+  content: "";
+  font-family: 'icomoon' !important;
+  font-size: 20px;
+}
+
+.slick-next {
+  right: 0;
+  margin-right: 20px;
+}
+
+.slick-next::before {
+  content: "";
+  font-family: 'icomoon' !important;
+  font-size: 20px;
 }
 
 body {
