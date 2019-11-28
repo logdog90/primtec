@@ -20,14 +20,14 @@
                 font-size: 30px
                 +bold
             &__black
-                color: $text
+                color: $black
             &__red
                 color: $bg
             &__phone
                 display: flex
                 align-items: center
                 padding-left: 40px
-                color: $text
+                color: $black
                 +semibold
             &__phone::before
                 content: $icon-phone
@@ -64,7 +64,7 @@
             &__link
                 display: flex
                 align-items: center
-                color: $text
+                color: $black
                 +semibold
             &__link::before
                 content: $icon-shopping-cart
@@ -86,11 +86,38 @@
             &__item:last-child
                 padding-right: 0
             &__link
-                color: $color-nav-white
+                color: $white
             &__link:hover
                 color: #F7FF00
+
 .slick
-    position: relative
+    &-block
+        position: relative
+        margin-bottom: 65px
+    &-slide
+        .btn
+            margin-top: 15px
+        .btn:hover
+            background-color: $white
+            color: #000000
+            +bold
+        &__block
+            position: absolute
+            top: 20%
+            width: 50%
+            color: $white
+            text-align: center
+        &__title
+            margin: 0
+            font-size: 54px
+        &__description
+            font-size: 28px
+        &__button
+            border: 2px solid $white
+            border-radius: 50px
+            background-color: transparent
+            padding: 15px 30px
+            color: $white
     &-prev,
     &-next
         position: absolute
@@ -100,7 +127,7 @@
         border-radius: 50%
         border: none
         outline: none
-        color: $color-nav-white
+        color: $white
         background: $bg
         cursor: pointer
         z-index: 1
@@ -123,4 +150,3 @@
         content: $arrow-right
         font-family: 'icomoon' !important
         font-size: 20px
-       

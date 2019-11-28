@@ -187,8 +187,44 @@
   color: #F7FF00;
 }
 
-.slick {
+.slick-block {
   position: relative;
+  margin-bottom: 65px;
+}
+
+.slick-slide .btn {
+  margin-top: 15px;
+}
+
+.slick-slide .btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Montserrat Bold', sans-serif;
+}
+
+.slick-slide__block {
+  position: absolute;
+  top: 20%;
+  width: 50%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.slick-slide__title {
+  margin: 0;
+  font-size: 54px;
+}
+
+.slick-slide__description {
+  font-size: 28px;
+}
+
+.slick-slide__button {
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  background-color: transparent;
+  padding: 15px 30px;
+  color: #ffffff;
 }
 
 .slick-prev, .slick-next {
@@ -236,6 +272,10 @@
 body {
   font-size: 15px;
   font-family: 'Montserrat Regular', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 a {
